@@ -1,0 +1,9 @@
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api","timestamp":"2025-10-30T21:55:05.373Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:21:55:05 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-30T21:55:05.392Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:21:55:05 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-30T21:55:05.906Z"}
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api","timestamp":"2025-10-30T21:55:18.465Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:21:55:18 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-30T21:55:18.467Z"}
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api","timestamp":"2025-10-30T21:55:20.418Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:21:55:20 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-30T21:55:20.420Z"}
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api","timestamp":"2025-10-30T21:55:21.355Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:21:55:21 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-30T21:55:21.357Z"}
