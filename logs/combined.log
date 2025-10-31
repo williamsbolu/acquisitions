@@ -50,3 +50,14 @@
 {"level":"info","message":"User williams.bolu99@gmail.com created successfully","service":"acquisitions-api","timestamp":"2025-10-31T18:52:34.925Z"}
 {"level":"info","message":"User registered successfully: williams.bolu99@gmail.com","service":"acquisitions-api","timestamp":"2025-10-31T18:52:34.928Z"}
 {"level":"info","message":"::1 - - [31/Oct/2025:18:52:34 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 131 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T18:52:34.931Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:13:37 +0000] \"GET /api/auth/sign-up HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:13:37.593Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:13:49 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 16 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:13:49.367Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:13:50 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 16 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:13:50.512Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:13:51 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 16 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:13:51.280Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:13:55 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 16 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:13:55.206Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:15:01 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 400 143 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:15:01.849Z"}
+{"level":"info","message":"User williams.bolu99@gmail.com authenticated successfully","service":"acquisitions-api","timestamp":"2025-10-31T23:15:30.751Z"}
+{"level":"info","message":"User logged in successfully: williams.bolu99@gmail.com","service":"acquisitions-api","timestamp":"2025-10-31T23:15:30.763Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:15:30 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 130 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:15:30.768Z"}
+{"level":"info","message":"User logged out successfully","service":"acquisitions-api","timestamp":"2025-10-31T23:17:25.682Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:23:17:25 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T23:17:25.685Z"}

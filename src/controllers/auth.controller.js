@@ -1,9 +1,9 @@
 import logger from '#config/logger.js';
-import { createUser } from '#services/auth.service.js';
+import { createUser, authenticateUser } from '#services/auth.service.js';
 import { cookies } from '#utils/cookies.js';
 import { formatValidation } from '#utils/format.js';
 import { jwttoken } from '#utils/jwt.js';
-import { signUpSchema } from '#validations/auth.validation.js';
+import { signUpSchema, signInSchema } from '#validations/auth.validation.js';
 
 export const signup = async (req, res, next) => {
   try {
@@ -49,6 +49,62 @@ export const signup = async (req, res, next) => {
       res.status(409).json({ error: 'Email already exists' });
     }
 
+    next(e);
+  }
+};
+
+export const signin = async (req, res, next) => {
+  try {
+    const validationResult = signInSchema.safeParse(req.body);
+
+    if (!validationResult.success) {
+      return res.status(400).json({
+        error: 'Validation failed',
+        detail: formatValidation(validationResult.error),
+      });
+    }
+
+    const { email, password } = validationResult.data;
+
+    const user = await authenticateUser({ email, password });
+
+    const token = jwttoken.sign({
+      id: user.id,
+      email: user.email,
+      role: user.role,
+    });
+
+    cookies.set(res, 'token', token);
+
+    logger.info(`User logged in successfully: ${email}`);
+
+    res.status(200).json({
+      message: 'User logged in successfully',
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+      },
+    });
+  } catch (e) {
+    logger.error('Signin error', e);
+
+    if (e.message === 'User not found' || e.message === 'Invalid password') {
+      return res.status(401).json({ error: 'Invalid email or password' });
+    }
+
+    next(e);
+  }
+};
+
+export const signout = async (req, res, next) => {
+  try {
+    cookies.clear(res, 'token');
+    logger.info('User logged out successfully');
+    res.status(200).json({ message: 'User logged out successfully' });
+  } catch (e) {
+    logger.error('Signout error', e);
     next(e);
   }
 };
