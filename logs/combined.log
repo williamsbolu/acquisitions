@@ -7,3 +7,46 @@
 {"level":"info","message":"::1 - - [30/Oct/2025:21:55:20 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-30T21:55:20.420Z"}
 {"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api","timestamp":"2025-10-30T21:55:21.355Z"}
 {"level":"info","message":"::1 - - [30/Oct/2025:21:55:21 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-30T21:55:21.357Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:04:31 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:04:31.792Z"}
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api","timestamp":"2025-10-30T23:07:51.262Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:07:51 +0000] \"GET / HTTP/1.1\" 200 22 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:07:51.266Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:07:58 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:07:58.316Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:10:28 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:10:28.689Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:10:29 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:10:29.921Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:10:30 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:10:30.652Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:10:48 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:10:48.539Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:19:45 +0000] \"GET /api/auth/sign-in HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:19:45.082Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:19:49 +0000] \"GET /api/auth/sign-in HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:19:49.286Z"}
+{"level":"info","message":"::1 - - [30/Oct/2025:23:20:02 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 16 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-30T23:20:02.497Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:45:09 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 16 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:45:09.388Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:45:13 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 16 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:45:13.758Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:46:24 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 286 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:46:24.715Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:47:24 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 286 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:47:24.950Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:53:39 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 286 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:53:39.219Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:54:41 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 286 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:54:41.520Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:56:00 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:56:00.723Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:56:02 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:56:02.264Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:56:13 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 264 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:56:13.470Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:59:16 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 777 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:59:16.702Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:59:30 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 286 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:59:31.000Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:59:36 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 286 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:59:36.915Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:00:59:44 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 286 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T00:59:44.368Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:01:02:14 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 91 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T01:02:14.111Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:01:02:47 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 91 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T01:02:47.866Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:01:04:02 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 91 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T01:04:02.425Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:01:04:40 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 91 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T01:04:40.624Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:01:06:18 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 194 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T01:06:18.101Z"}
+{"level":"info","message":"User registered successfully: williams.bolu99@gmail.com","service":"acquisitions-api","timestamp":"2025-10-31T01:07:41.110Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:01:07:41 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 131 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T01:07:41.120Z"}
+{"level":"info","message":"User williams.bolu99@gmail.com created successfully","service":"acquisitions-api","timestamp":"2025-10-31T18:50:00.687Z"}
+{"level":"info","message":"User registered successfully: williams.bolu99@gmail.com","service":"acquisitions-api","timestamp":"2025-10-31T18:50:00.699Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:18:50:00 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 131 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T18:50:00.708Z"}
+{"level":"error","message":"Error creating user: Error: User already exists","service":"acquisitions-api","timestamp":"2025-10-31T18:50:15.339Z"}
+{"level":"error","message":"Signup error Error creating user","service":"acquisitions-api","stack":"Error: Error creating user\n    at createUser (file:///C:/Users/HP/Desktop/acquisitions/src/services/auth.service.js:48:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///C:/Users/HP/Desktop/acquisitions/src/controllers/auth.controller.js:22:18)","timestamp":"2025-10-31T18:50:15.341Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:18:50:15 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 475 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T18:50:15.344Z"}
+{"level":"error","message":"Error creating user: Error: User already exists","service":"acquisitions-api","timestamp":"2025-10-31T18:50:21.038Z"}
+{"level":"error","message":"Signup error Error creating user","service":"acquisitions-api","stack":"Error: Error creating user\n    at createUser (file:///C:/Users/HP/Desktop/acquisitions/src/services/auth.service.js:48:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///C:/Users/HP/Desktop/acquisitions/src/controllers/auth.controller.js:22:18)","timestamp":"2025-10-31T18:50:21.039Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:18:50:21 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 475 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T18:50:21.041Z"}
+{"level":"info","message":"User williams.bolu99@gmail.com created successfully","service":"acquisitions-api","timestamp":"2025-10-31T18:52:34.925Z"}
+{"level":"info","message":"User registered successfully: williams.bolu99@gmail.com","service":"acquisitions-api","timestamp":"2025-10-31T18:52:34.928Z"}
+{"level":"info","message":"::1 - - [31/Oct/2025:18:52:34 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 131 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-31T18:52:34.931Z"}
