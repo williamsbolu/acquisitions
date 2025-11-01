@@ -1,10 +1,11 @@
 import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
-import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
+import morgan from 'morgan';
 import logger from '#config/logger.js';
 import authRoutes from '#routes/auth.routes.js';
+import securityMiddleware from '#middleware/security.middleware.js';
 
 const app = express();
 
@@ -19,6 +20,8 @@ app.use(
     stream: { write: message => logger.info(message.trim()) }, // Combining both our logging library that is winston and morgan. by passing over morgan messages into our logger
   })
 );
+
+app.use(securityMiddleware);
 
 app.get('/', (req, res) => {
   logger.info('Hello from Acquisition!');
