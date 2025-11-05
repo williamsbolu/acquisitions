@@ -52,6 +52,9 @@ COPY . .
 # Create production build (if needed for your app)
 # RUN npm run build (uncomment if you have a build step)
 
+# Ensure drizzle directory exists (create empty one if it doesn't)
+RUN mkdir -p drizzle
+
 # Production stage
 FROM base AS production
 WORKDIR /app
@@ -71,8 +74,8 @@ COPY --from=builder --chown=nodejs:nodejs /app/src ./src
 COPY --from=builder --chown=nodejs:nodejs /app/package.json ./
 COPY --from=builder --chown=nodejs:nodejs /app/drizzle.config.js ./
 
-# Copy drizzle migrations if they exist
-COPY --from=builder --chown=nodejs:nodejs /app/drizzle ./drizzle 2>/dev/null || true
+# Copy drizzle migrations
+COPY --from=builder --chown=nodejs:nodejs /app/drizzle ./drizzle
 
 # Create logs directory with proper permissions
 RUN mkdir -p logs && chown -R nodejs:nodejs logs
