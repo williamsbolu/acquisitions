@@ -1,6 +1,14 @@
 import logger from '#config/logger.js';
-import { fetchAllUsers, getUserById as getUserByIdService, updateUser as updateUserService, deleteUser as deleteUserService } from '#services/users.service.js';
-import { userIdSchema, updateUserSchema } from '#validations/users.validation.js';
+import {
+  fetchAllUsers,
+  getUserById as getUserByIdService,
+  updateUser as updateUserService,
+  deleteUser as deleteUserService,
+} from '#services/users.service.js';
+import {
+  userIdSchema,
+  updateUserSchema,
+} from '#validations/users.validation.js';
 import { formatValidation } from '#utils/format.js';
 
 export const getAllUsers = async (req, res, next) => {
@@ -24,7 +32,7 @@ export const getUserById = async (req, res, next) => {
   try {
     // Validate request parameters
     const validationResult = userIdSchema.safeParse(req.params);
-    
+
     if (!validationResult.success) {
       return res.status(400).json({
         error: 'Validation failed',
@@ -33,7 +41,7 @@ export const getUserById = async (req, res, next) => {
     }
 
     const { id } = validationResult.data;
-    
+
     logger.info(`Getting user by id: ${id}`);
 
     const user = await getUserByIdService(id);
@@ -43,12 +51,12 @@ export const getUserById = async (req, res, next) => {
       user,
     });
   } catch (e) {
-    logger.error(`Error getting user by id:`, e);
-    
+    logger.error('Error getting user by id:', e);
+
     if (e.message === 'User not found') {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     next(e);
   }
 };
@@ -57,7 +65,7 @@ export const updateUser = async (req, res, next) => {
   try {
     // User is available from authentication middleware as req.user
     const currentUser = req.user;
-    
+
     // Validate request parameters
     const paramValidation = userIdSchema.safeParse(req.params);
     if (!paramValidation.success) {
@@ -108,12 +116,12 @@ export const updateUser = async (req, res, next) => {
       user: updatedUser,
     });
   } catch (e) {
-    logger.error(`Error updating user:`, e);
-    
+    logger.error('Error updating user:', e);
+
     if (e.message === 'User not found') {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     next(e);
   }
 };
@@ -122,10 +130,10 @@ export const deleteUser = async (req, res, next) => {
   try {
     // User is available from authentication middleware as req.user
     const currentUser = req.user;
-    
+
     // Validate request parameters
     const validationResult = userIdSchema.safeParse(req.params);
-    
+
     if (!validationResult.success) {
       return res.status(400).json({
         error: 'Validation failed',
@@ -152,12 +160,12 @@ export const deleteUser = async (req, res, next) => {
       message: 'User deleted successfully',
     });
   } catch (e) {
-    logger.error(`Error deleting user:`, e);
-    
+    logger.error('Error deleting user:', e);
+
     if (e.message === 'User not found') {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     next(e);
   }
 };

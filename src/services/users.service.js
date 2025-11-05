@@ -21,7 +21,7 @@ export const fetchAllUsers = async () => {
   }
 };
 
-export const getUserById = async (id) => {
+export const getUserById = async id => {
   try {
     const [user] = await db
       .select({
@@ -85,7 +85,7 @@ export const updateUser = async (id, updates) => {
   }
 };
 
-export const deleteUser = async (id) => {
+export const deleteUser = async id => {
   try {
     // Check if user exists
     const existingUser = await db
@@ -99,9 +99,7 @@ export const deleteUser = async (id) => {
     }
 
     // Delete the user
-    await db
-      .delete(users)
-      .where(eq(users.id, id));
+    await db.delete(users).where(eq(users.id, id));
 
     logger.info(`User ${id} deleted successfully`);
     return { message: 'User deleted successfully' };
